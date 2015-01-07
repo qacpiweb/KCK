@@ -12,6 +12,7 @@ public:
 	void action(Ship& statek);
 	void positiveAnswer(Ship& statek);
 	void negativeAnswer(Ship& statek);
+	static bool busy;
 private:
 
 	static unsigned int chance;

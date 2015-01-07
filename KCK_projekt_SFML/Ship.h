@@ -21,13 +21,13 @@ public:
 	int GetStuff();
 
 	void comeBack();
-
+	void setPosition(float x = 460, float y = 460);
 	bool isStuck;
 	int movementCounter = 0;
 	// movmentCounter jako public poniewaz funkcja wydajaca rozkaz np."prawo" bedzie musiala go zerowac
 private:
 	void setTexture();
-	void setPosition(float x = 460, float y = 460);
+	
 
 	
 	int vx, vy;

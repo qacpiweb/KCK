@@ -12,7 +12,10 @@
 #include "Help.h"
 #include "BorderMan.h"
 
-
+void wykonaj_komende();
+Ship s; Pirate p1; BorderMan b;
+map<string, Planet*> planets;
+float dt;
 
 int main(int argv, char* argc[])
 {
@@ -26,19 +29,21 @@ int main(int argv, char* argc[])
 	
 	Parameter money(15, 550, 600, "arial.ttf", L"Pieni¹dze: ");
 
-	Ship s; Pirate p1; BorderMan b;
-	
-	 map<string, Planet*> planets;
+
 	 planets["Merkury"] = new Planet(140, 140, 1);
 	 planets["Uran"] = new Planet(550, 550, 2); //70,440,2
 	 planets["Jowisz"] = new Planet(290, 140, 3);
 	 planets["Neptun"] = new Planet(420, 290, 4);
-	 auto dt = clock.restart().asSeconds();
+	 dt = clock.restart().asSeconds();
 	while (Window::isOpen())
 	{
 		
 		//auto dt = clock.restart().asSeconds();
 		Help::podaj_statek(&s, &dt, planets);
+		if (Help::flaga)
+		{
+			wykonaj_komende();
+		}
 		sf::Event event;
 		while (Window::pollEvent(event))
 		{
@@ -73,4 +78,40 @@ int main(int argv, char* argc[])
 
 	}
 	return 0;
+}
+
+
+void wykonaj_komende()
+{
+	if (Help::komenda == "lec")
+	{
+		if (Help::argument == "lewo" || Help::argument == "prawo" || Help::argument == "gora" || Help::argument == "dol")
+		{
+			s.fly(dt, Help::s2ws(Help::argument));
+		}
+		else
+		{
+			s.flyTo(dt, *planets[Help::argument]);
+		}
+	}
+	if (Help::komenda == "plac")
+	{
+		if (Pirate::busy)
+		{
+			p1.positiveAnswer(s);
+		}
+		if (BorderMan::busy)
+		{
+			for each(pair<string, Planet*> a in planets)
+			{
+				if (a.second->onPlanet(s))
+				{
+					b.positiveAns(*a.second,s);
+				}
+			}
+		}
+	}
+
+
+	Help::flaga = false;
 }

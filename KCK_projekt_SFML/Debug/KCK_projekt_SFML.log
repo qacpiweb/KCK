@@ -1,11 +1,23 @@
-﻿Build started 2015-01-06 14:47:06.
-     1>Project "C:\Users\user\Documents\GitHub\KCK\KCK_projekt_SFML\KCK_projekt_SFML.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML\SFML-2.1\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt BorderMan.cpp
-         BorderMan.cpp
-     1>c:\users\user\documents\github\kck\kck_projekt_sfml\borderman.cpp(13): warning C4244: 'argument' : conversion from 'std::chrono::system_clock::rep' to 'unsigned int', possible loss of data
+﻿Build started 2015-01-07 21:01:24.
+     1>Project "C:\Users\Kacper\Documents\GitHub\KCK\KCK_projekt_SFML\KCK_projekt_SFML.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\KCK_projekt_SFML.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\SFML\SFML-2.1\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Help.cpp
+         Help.cpp
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(50): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(52): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(55): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(96): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(99): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(117): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(120): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(142): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(145): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(155): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kacper\documents\github\kck\kck_projekt_sfml\help.cpp(157): warning C4018: '<' : signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\user\Documents\GitHub\KCK\Debug\KCK_projekt_SFML.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML\SFML-2.1\Libs\Debug" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\user\Documents\GitHub\KCK\Debug\KCK_projekt_SFML.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\user\Documents\GitHub\KCK\Debug\KCK_projekt_SFML.lib" /MACHINE:X86 Debug\BorderMan.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kacper\Documents\GitHub\KCK\Debug\KCK_projekt_SFML.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML\SFML-2.1\Libs\Debug" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kacper\Documents\GitHub\KCK\Debug\KCK_projekt_SFML.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kacper\Documents\GitHub\KCK\Debug\KCK_projekt_SFML.lib" /MACHINE:X86 Debug\BorderMan.obj
          Debug\Console.obj
          Debug\Parameter.obj
          Debug\Pirate.obj
@@ -18,9 +30,12 @@
          Debug\Planet.obj
          Debug\Ship.obj
          Debug\stdafx.obj
-         KCK_projekt_SFML.vcxproj -> C:\Users\user\Documents\GitHub\KCK\Debug\KCK_projekt_SFML.exe
-     1>Done Building Project "C:\Users\user\Documents\GitHub\KCK\KCK_projekt_SFML\KCK_projekt_SFML.vcxproj" (Build target(s)).
+         KCK_projekt_SFML.vcxproj -> C:\Users\Kacper\Documents\GitHub\KCK\Debug\KCK_projekt_SFML.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\KCK_projekt_SFML.tlog\unsuccessfulbuild".
+         Touching "Debug\KCK_projekt_SFML.tlog\KCK_projekt_SFML.lastbuildstate".
+     1>Done Building Project "C:\Users\Kacper\Documents\GitHub\KCK\KCK_projekt_SFML\KCK_projekt_SFML.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.42
+Time Elapsed 00:00:01.91
